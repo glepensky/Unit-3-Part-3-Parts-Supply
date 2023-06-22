@@ -78,12 +78,21 @@ console.log(sum);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
-let partsTotal = 572;
-let eachBox = 7;
 
-while (partsTotal / eachBox == filledBox){
-  
+let partsToShip = 572;
+let boxSize = 7;
+let filledBoxes = 0;
+// Set up variables first
+
+while (partsToShip > boxSize) {
+  partsToShip -= boxSize
+  filledBoxes += 1
 }
+console.log("Remaining parts to ship" , partsToShip);
+console.log("Full boxes:" , filledBoxes);
+
+
+
 
 
 
